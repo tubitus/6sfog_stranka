@@ -163,11 +163,14 @@ header nav a {
     font-size: 3vh;
   }
   header nav a:hover {
-    margin-left: 10px;
+    margin-left: 1vh;
   }
 }
-header nav a #pull {
-  text-decoration: underline solid #fff;
+header nav #pull {
+  padding-left: 1vh;
+}
+header nav #pull:hover {
+  margin-left: 0;
 }
 header .is-open {
   transform: translateX(-50%) translateY(0px);
@@ -175,12 +178,16 @@ header .is-open {
 main .container_main {
   padding-top: 10px;
   height: 100%;
-  background-color: rgba(0,0,0,0.438);
-  padding: 0 15vh;
+  background-color: rgba(0,0,0,0.11);
+  padding: 0 2vh;
+}
+@media only screen and (min-width: 768px) {
+  main .container_main {
+    padding: 0 15vh;
+  }
 }
 main .container_main H1 {
   color: #fff;
-  padding-left: 1vh;
   margin-top: 0;
   padding-top: 2vh;
 }
@@ -188,7 +195,6 @@ main .container_main p {
   color: #fff;
   line-height: 3vh;
   font-size: 2vh;
-  padding-left: 1vh;
   margin-bottom: 0;
 }
 main .container_main ul {
@@ -206,7 +212,7 @@ main .container_main ul {
   }
   main .container_main p {
     color: #fff;
-    line-height: 3.5vh;
+    line-height: 3.2vh;
     font-size: 3vh;
     padding-left: 1vh;
     margin-bottom: 0;
@@ -223,7 +229,12 @@ footer .container_foot {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-left: 50vh;
+}
+@media only screen and (min-width: 768px) {
+  footer .container_foot {
+    margin-left: 50vh;
+    height: auto;
+  }
 }
 footer .container_foot a {
   display: flex;
@@ -231,6 +242,6 @@ footer .container_foot a {
   flex-direction: row;
 }
 footer .container_foot a svg {
-  max-width: 128px;
-  max-height: 64px;
+  width: 12vh;
+  height: 7vh;
 }
