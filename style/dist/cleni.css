@@ -214,25 +214,6 @@ main .container_main {
 }
 @media only screen and (min-width: 768px) {
   main .container_main {
-    padding: 0 15vh;
-  }
-}
-main .container_main H1 {
-  color: #fff;
-  margin-top: 0;
-  padding-top: 2vh;
-}
-main .container_main p {
-  color: #fff;
-  line-height: 3vh;
-  font-size: 2vh;
-  margin-bottom: 0;
-}
-main .container_main ul {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 768px) {
-  main .container_main {
     margin-left: 50vh;
     height: 100vh;
   }
