@@ -88,7 +88,7 @@ header
     nav
         position: absolute
         left: 50%
-        transform: translateX(-50%) translateY(-350px)
+        transform: translateX(-50%) translateY(-450px)
         z-index: 1
         width: 100%
         display: flex
@@ -123,15 +123,41 @@ header
                 z-index: 10
                 flex-direction: row
                 justify-content: flex-end
-                padding-right: 6vh
+                padding-right: 0
                 padding-left: 0
                 max-width: 1300px
                 background: none
                 box-shadow: none
                 font-size: 3vh
-                padding-bottom: 0
                 &:hover
-                    margin-left: 10px
+                    margin-left: 1vh
+        .dropdown
+            cursor: pointer
+            position: relative;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif
+            text-decoration: none
+            color rgb(255, 255, 255)
+            transition: ease .3s
+            font-weight: bold
+            font-size: 3vh
+        .dropdown-content
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.596)
+            min-width: 70px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 2vh
+            z-index: 15;
+            padding-right: 3vh
+            max-width: 116px
+        .dropdown:hover .dropdown-content
+            display: block;
+        #host
+            position: absolute
+            left: -9vh
+            top: 97 vh
+            font-size: 2vh
         #pull
             padding-left: 1vh
             &:hover

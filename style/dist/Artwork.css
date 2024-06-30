@@ -207,53 +207,47 @@ header .is-open {
   transform: translateX(-50%) translateY(0px);
 }
 main {
-  height: 100vh;
+  height: 200vh;
 }
 main .container_main {
   padding-top: 10px;
   height: 100%;
   background-color: rgba(0,0,0,0.11);
   padding: 0 2vh;
-}
-main .container_main h3 {
-  color: #fff;
-  margin-top: 0;
-  padding-top: 2vh;
-  font-size: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 main .container_main ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 1vh;
-  padding-left: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
 }
-main .container_main img {
+main .container_main ul img {
+  display: flex;
   max-width: 50%;
   max-height: 50%;
 }
 @media only screen and (min-width: 768px) {
   main .container_main {
     margin-left: 50vh;
-    height: 100vh;
-  }
-  main .container_main H1 {
-    color: #fff;
-    padding-left: 1vh;
-    font-size: 4vh;
-  }
-  main .container_main p {
-    color: #fff;
-    line-height: 4vh;
-    font-size: 3vh;
-    padding-left: 1vh;
-    margin-bottom: 0;
+    height: 100%;
+    gap: 0;
   }
   main .container_main ul {
+    max-height: 150vh;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-  main .container_main h3 {
-    color: #fff;
-    margin-top: 0;
-    padding-top: 2vh;
+  main .container_main ul img {
+    display: flex;
+    max-width: 70%;
+    max-height: 70%;
   }
 }
 footer .container_foot {
