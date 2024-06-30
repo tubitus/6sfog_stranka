@@ -206,32 +206,51 @@ header nav #pull:hover {
 header .is-open {
   transform: translateX(-50%) translateY(0px);
 }
-main .container_main {
+main {
+  height: 200vh;
+}
+main .container-card-DEVGRU {
+  height: 300vh;
   padding-top: 10px;
-  height: 100%;
   background-color: rgba(0,0,0,0.11);
   padding: 0 2vh;
 }
 @media only screen and (min-width: 768px) {
-  main .container_main {
+  main .container-card-DEVGRU {
     margin-left: 50vh;
     height: 100vh;
   }
-  main .container_main H1 {
+  main .container-card-DEVGRU H1 {
     color: #fff;
     padding-left: 1vh;
     font-size: 4vh;
   }
-  main .container_main p {
+  main .container-card-DEVGRU p {
     color: #fff;
     line-height: 4vh;
     font-size: 3vh;
     padding-left: 1vh;
     margin-bottom: 0;
   }
-  main .container_main ul {
+  main .container-card-DEVGRU ul {
     margin-bottom: 0;
   }
+}
+main .container-card-DEVGRU img {
+  width: 70px;
+  height: 70px;
+}
+main .container-card-DEVGRU .card {
+  color: #fff;
+}
+main .container-card-DEVGRU .card ul {
+  display: flex;
+  flex-direction: column;
+}
+main .container-card-DEVGRU .card ul li {
+  position: relative;
+  top: -6vh;
+  left: 10vh;
 }
 footer .container_foot {
   background-color: rgba(0,0,0,0.616);
