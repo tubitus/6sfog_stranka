@@ -161,10 +161,9 @@ header nav a {
     background: none;
     box-shadow: none;
     font-size: 3vh;
-    padding-bottom: 0;
   }
   header nav a:hover {
-    margin-left: 10px;
+    margin-left: 1vh;
   }
 }
 header nav #pull {
@@ -176,87 +175,54 @@ header nav #pull:hover {
 header .is-open {
   transform: translateX(-50%) translateY(0px);
 }
+main {
+  height: 100vh;
+}
 main .container_main {
-  padding-top: 1vh;
+  padding-top: 10px;
   height: 100%;
   background-color: rgba(0,0,0,0.11);
   padding: 0 2vh;
 }
-@media only screen and (min-width: 768px) {
-  main .container_main {
-    padding: 0 15vh;
-  }
-}
-main .container_main H3 {
+main .container_main h3 {
   color: #fff;
   margin-top: 0;
   padding-top: 2vh;
-}
-main .container_main H2 {
-  color: #fff;
-  margin-top: 0;
-  padding-top: 0.2vh;
-}
-main .container_main p {
-  color: #fff;
-  line-height: 3vh;
-  font-size: 2vh;
-  margin-bottom: 0;
+  font-size: 4vh;
 }
 main .container_main ul {
-  margin-bottom: 0;
+  display: flex;
+  gap: 1vh;
+  padding-left: 0;
 }
-main .container_main .spec {
-  color: #fff;
-  line-height: 3vh;
-  font-size: 2vh;
-  margin-bottom: 0;
-}
-main .container_main .line {
-  text-decoration: underline;
-}
-main .container_main #chleba {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+main .container_main img {
+  max-width: 50%;
+  max-height: 50%;
 }
 @media only screen and (min-width: 768px) {
   main .container_main {
     margin-left: 50vh;
     height: 100vh;
   }
-  main .container_main H3 {
+  main .container_main H1 {
     color: #fff;
     padding-left: 1vh;
-    font-size: 3.5vh;
+    font-size: 4vh;
   }
   main .container_main p {
     color: #fff;
-    line-height: 3.2vh;
-    font-size: 2vh;
+    line-height: 4vh;
+    font-size: 3vh;
     padding-left: 1vh;
     margin-bottom: 0;
   }
   main .container_main ul {
     margin-bottom: 0;
   }
-  main .container_main .spec {
-    display: flex;
-    color: #fff;
-    line-height: 3vh;
-    font-size: 2vh;
-    margin-bottom: 0;
-  }
-  main .container_main H2 {
+  main .container_main h3 {
     color: #fff;
     margin-top: 0;
-    padding-top: 0.2vh;
-  }
-  main .container_main .line {
-    text-decoration: underline;
-  }
-  main .container_main #chleba {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    padding-top: 2vh;
   }
 }
 footer .container_foot {
